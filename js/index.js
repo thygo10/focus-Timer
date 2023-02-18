@@ -1,24 +1,19 @@
 import {
   Controls
 } from './controls.js'
+
 import {
   Timer
 } from './timer.js'
+
 import Sound from './sounds.js'
+
+import Events from './events.js'
+
 import {
-  elements
+  playButton,pauseButton,stopButton,setButton,minutesDisplay,secondsDisplay
 } from './elements.js'
 
-const {
-  playButton,
-  pauseButton,
-  setButton,
-  stopButton,
-  volumeOn,
-  volumeOff,
-  minutesDisplay,
-  secondsDisplay
-} = elements
 
 const sound = Sound()
 
@@ -35,7 +30,29 @@ const timer = Timer({
   resetControls: controls.reset,
 })
 
+Events({
+  controls,
+  timer,
+  sound
+})
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 playButton.addEventListener('click', function () {
   controls.play()
   timer.countdown()
@@ -77,4 +94,4 @@ setButton.addEventListener('click', function () {
   timer.updateDisplay(newMinutes, 0)
   timer.updateMinutes(newMinutes)
 
-})
+})*/

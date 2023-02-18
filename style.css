@@ -6,10 +6,10 @@
 
 :root {
   font-size: 62.5%;
-  --bg-color:black;
+  --bg-color: black;
   --bg-color-2: rgba(66, 211, 255, 0.13);
-  --primary-color:#42d3ff;
-  --text-color:#FFFFFF;
+  --primary-color: #42d3ff;
+  --text-color: #FFFFFF;
 
 }
 
@@ -20,10 +20,10 @@ body {
   font-size: 1.6rem;
   min-height: 100vh;
   display: grid;
-  
+
 }
 
-.container{
+.container {
   justify-self: center;
   align-self: flex-end;
 }
@@ -37,34 +37,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   background: var(--bg-color-2);
   border-radius: 9999px;
 
-  width: clamp(10rem , 10rem + 30vw, 22.8rem)  ;
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
   height: clamp(8rem, 5rem + 10vw, 10.8rem);
-  
+
   gap: 3.2rem;
-  
+
 }
 
-button{
+button {
   background: transparent;
   border: none;
   cursor: pointer;
 }
 
-button img{
+button img {
   width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
 }
 
-.hide{
+.hide {
   display: none;
 }
 
-footer{
+footer {
   justify-self: end;
   align-self: flex-end;
   padding: 3rem;
 }
-
